@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+<!-- 	<div class="articles"> -->
+		{% for article in articles %}
+<!-- 			<div class="container" > -->
+				<h2 class="blog-detail-title"><a href="{%url 'articles:detail' slug=article.slug %}" style="color: #222529">{{article.title}}</a></h2>
+				{% for tag in article.tags.all %}
+					<a href="{%url 'articles:tagged' tag.slug %}" class="mr-1 badge-info">#{{tag.name}}</a>
+				{% endfor %}
+				<p class="blog-post-meta" style="float: right;">{{article.date}} <a href="#">{{article.author}}</a></p>
+				<hr>
+				{{ article.snippetbody | safe }}
+				<p></p>
+				<!-- <p class="blog-post-meta"><a href="{%url 'articles:detail' slug=article.slug %}" style="color: #999" class="font-weight-bold">Continue reading...</a></p> -->
+<!-- 			</div> -->
+		{% endfor %}
+<!-- 	</div> -->
+</div>
+{% endblock %}
