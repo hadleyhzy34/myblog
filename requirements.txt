@@ -2,6 +2,7 @@
 ####### example-requirements.txt #######
 #
 ###### Requirements without Version Specifiers ######
+django
 django-ckeditor
 django-markdownx
 markdown
