@@ -2,25 +2,34 @@
 
 Personal blog by using Djano application
 
-## Installation
 
+## Installation
+###download package
+```bash
+git clone https://github.com/hadleyhzy34/myblog.git
+```
+
+###Set up virtual enviroment
+
+```bash
+python3 -m venv tutorial-env
+```
+On unix or MacOS, run:
+```bash
+source tutorial-env/bin/activate
+```
+
+### dependencies
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install markdonw
-pip install markdownx
-pip install ckeditor
-pip install taggit
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+python manage.py runserver
 ```
 
 ## Contributing
