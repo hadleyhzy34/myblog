@@ -4,12 +4,12 @@ Personal blog by using Djano application
 
 
 ## Installation
-###download package
+### download package
 ```bash
 git clone https://github.com/hadleyhzy34/myblog.git
 ```
 
-###Set up virtual enviroment
+### Set up virtual enviroment
 
 ```bash
 python3 -m venv tutorial-env
